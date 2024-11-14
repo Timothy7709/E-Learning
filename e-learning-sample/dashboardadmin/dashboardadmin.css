@@ -1,0 +1,468 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  background-position: center center; /* Posisikan latar belakang di tengah-tengah */
+  background-size: cover; /* Latar belakang akan menutupi seluruh elemen */
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#navbar {
+  background: #313131;
+  color: black;
+  height: 100%;
+}
+
+#navbar a {
+  margin: 10px;
+  font-size: 22px;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* width: 100%; */
+  align-items: stretch;
+  min-width: 250px;
+  max-width: 250px;
+  color: #313131;
+  background-color: #f6f4eb;
+  transition: all 0.3s;
+  height: 98%;
+}
+
+#sidebar ul li {
+  margin-bottom: 20px;
+}
+
+#sidebar ul li img {
+  border-radius: 100%;
+  width: 130px;
+  height: 120px;
+  border: #eaeaea 2px solid;
+}
+#sidebar ul .imgprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* #sidebar ul.components {
+    /* padding: 20px 0; */
+/* border-bottom: 1px solid #47748b; 
+}*/
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #fff;
+  background: #161a30;
+}
+
+i {
+  margin-right: 20px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+/* ----------------------------------------------------
+    Profile PAGE
+-------------------------------------------------------*/
+
+.formgroup p {
+  font-weight: 400;
+  color: #313131;
+}
+
+.profilecontent form {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  flex-direction: column;
+  margin-right: auto;
+  margin-bottom: 180px;
+}
+
+.profilecontent form .formgroup {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+}
+
+.formgroup input[type="text"],
+.formgroup input[type="email"] {
+  border: none;
+  border-bottom: #313131 2px solid;
+  background-color: transparent;
+}
+
+.formgroup input[type="text"]:focus,
+.formgroup input[type="email"]:focus {
+  outline: none;
+  border-bottom: #313131 2px solid;
+}
+
+.formgroup input[type="file"] {
+  border: none;
+  background-color: transparent;
+}
+.formgroup input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #323131; /* Warna latar tombol saat dihover */
+}
+
+.formgroup input[type="file"]::-webkit-file-upload-button {
+  background-color: #464444; /* Ganti warna sesuai keinginan Anda */
+  color: #fff; /* Ganti warna teks sesuai keinginan Anda */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formgroup input[type="file"]:focus {
+  outline: none;
+  /* border-bottom: #313131 2px solid; */
+}
+
+.update-profile {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 25px;
+  border-radius: 5%;
+  background-color: #464444;
+}
+
+/* Perbarui gaya untuk formulir dan elemen-elemen anaknya */
+.formprofile {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 400px; /* Sesuaikan max-width sesuai kebutuhan desain Anda */
+  margin-top: 20px; /* Sesuaikan margin-top sesuai kebutuhan */
+}
+
+.formgroup {
+  margin-bottom: 15px;
+  width: 100%; /* Pastikan form group mengambil lebar penuh */
+}
+
+.formgroup p {
+  margin-bottom: 8px;
+}
+
+.update-profile {
+  width: 80px; /* Sesuaikan lebar tombol sesuai kebutuhan */
+  height: 30px; /* Sesuaikan tinggi tombol sesuai kebutuhan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.update-profile:hover {
+  background-color: #323131; /* Warna latar tombol saat dihover */
+  color: #fff;
+}
+
+.wrappercardinfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.judulcardadmin {
+  border-bottom: #eaeaea 1px solid;
+}
+
+.carddashadmin p {
+  margin-top: 10px;
+}
+
+.judulcardadmin h3 {
+  margin-top: 10px;
+}
+
+.carddashadmin {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  background-color: #313131;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.contentdashAdmin {
+  width: 800px;
+  margin: auto;
+}
+
+.carddashadmin p,
+.carddashadmin h3 {
+  display: flex;
+  justify-content: center;
+  color: #eaeaea;
+}
+
+.carddashadmin p {
+  font-size: 25px;
+}
+.contentdashAdmin h3 {
+  align-items: center;
+  margin-bottom: 30px;
+  height: 30px;
+}
+.tableTurner {
+  display: flex;
+  justify-content: center;
+}
+/* CSS tambahan untuk menentukan lebar maksimal tabel */
+.tableContent {
+  width: 800px;
+}
+/* Pastikan bahwa tabel memiliki lebar maksimal di dalam konten */
+/* .contentdashAdmin {
+
+} */
+
+.middledashadmin {
+  display: flex;
+  justify-content: center;
+  background-color: #313131;
+}
+
+.table button {
+  background-color: transparent;
+  border: none;
+}
+
+.table i {
+  margin-left: 10px;
+}
+
+/* .container {
+
+} */
+
+.formgroup p {
+  font-weight: 400;
+  color: #313131;
+}
+
+.formgroup input[type="text"],
+.formgroup input[type="email"] {
+  border: none;
+  border-bottom: #313131 2px solid;
+  background-color: transparent;
+}
+
+.formgroup input[type="text"]:focus,
+.formgroup input[type="email"]:focus {
+  outline: none;
+  border-bottom: #313131 2px solid;
+}
+
+.formgroup input[type="file"] {
+  border: none;
+  background-color: transparent;
+}
+.formgroup input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #323131; /* Warna latar tombol saat dihover */
+}
+
+.formgroup input[type="file"]::-webkit-file-upload-button {
+  background-color: #464444; /* Ganti warna sesuai keinginan Anda */
+  color: #fff; /* Ganti warna teks sesuai keinginan Anda */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formgroup input[type="file"]:focus {
+  outline: none;
+  /* border-bottom: #313131 2px solid; */
+}
+
+.update-profile {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 25px;
+  border-radius: 5%;
+  background-color: #464444;
+}
+
+.formSize {
+  width: 400px;
+}
+
+.formgroup {
+  width: 100%; /* Pastikan form group mengambil lebar penuh */
+}
+
+.update-profile {
+  width: 80px; /* Sesuaikan lebar tombol sesuai kebutuhan */
+  height: 30px; /* Sesuaikan tinggi tombol sesuai kebutuhan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.update-profile:hover {
+  background-color: #323131; /* Warna latar tombol saat dihover */
+  color: #fff;
+}
+
+.lessonsadmin {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.wrapperlessonscontent {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.contentlessonsadmin {
+  width: 100%;
+  margin-right: auto;
+}
+
+.lessonsadmin p {
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #313131;
+}
+
+.lessonsadmin button {
+  color: #eaeaea;
+}
+
+.middlelessons,
+.middlestudent {
+  background-color: #464444;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.middlelessons p,
+.middlestudent p {
+  color: #fff;
+}
+
+.middlestudent {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* .table {
+
+} */
+
+/* Pastikan bahwa tabel memiliki lebar maksimal di dalam konten */
+/* .contentdashAdmin {
+
+} */
+
+.middlelessons {
+  display: flex;
+  justify-content: left;
+  background-color: #313131;
+  padding: 10px;
+  margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.judulcardtable {
+  color: #fff;
+}
+#addnew {
+  margin-left: auto;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  color: #232323;
+  font-size: 22px;
+  border: none;
+  width: 35px;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+@media screen and (min-device-width: 1000px) {
+  .contentdashAdmin,
+  .tableContent {
+    width: 600px;
+  }
+  #sidebar {
+    height: 95%;
+  }
+}

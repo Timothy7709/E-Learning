@@ -1,0 +1,311 @@
+*,body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image:url('../assets/mathbackground.jpg');    
+  color: #eaeaea;
+}
+
+
+.navbar-nav {
+  /* margin-left: 50px; */
+  padding: 0 10px 0 10px;
+  z-index: 999;
+}
+
+.nav-link{
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.navbar-nav a:hover {
+  background-color: rgb(255, 94, 0);
+  border-radius: 10px;
+  transition: ease-in-out .4s;
+}
+
+.navbar-brand span{
+  font-size: 15px;
+  color: gray;
+  margin-left: 5px;
+}
+
+.navbar-brand{
+  font-size: 28px;
+}
+.navbar{
+  background-color: transparent;
+width: 100%;
+  position: fixed;
+}
+
+/* Nav selesai */
+
+#content1{
+
+display: flex;
+justify-content:center;
+align-items: center;
+height: 90vh;
+}
+.content1 a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+#btnstart{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 94, 0);
+  border: none;
+}
+
+#content a{
+  color: #eaeaea;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#btnstart:hover{
+  background-color: #eaeaea;
+}
+#btnstart:hover{
+  color: rgb(255, 94, 0);
+  transition: ease-in-out .5s;
+}
+
+.content1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column; 
+}
+
+/* content 1 selesai */
+
+#content2{
+  background-color: #232323;
+  width: 100%;
+  height: 60px;
+
+}
+
+.content2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.isi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.isi p{
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+#content2 li{
+  list-style: none;
+}
+
+.isi span{
+  color:rgb(255, 94, 0) ;
+}
+/* content 2 selesai */
+
+/* content 3 */
+
+#content3{
+display: flex;
+background-color: #eaeaea;
+}
+
+.content3{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content:left;
+margin: 10px;
+}
+
+.cardcontent{
+width: 480px;
+/* background-color: #232323; */
+display: flex;
+margin-bottom: 10px;
+justify-content: center;
+}
+
+
+
+footer a{
+border-radius: 5px;
+width: 60px;
+height: 28px;
+text-decoration: none;
+color: #ffffff;
+background-color:rgb(255, 94, 0);
+display: flex; 
+justify-content: center;
+ align-items: center;
+ margin-left: 10px;
+
+}
+
+footer a:hover{
+background-color: #ffffff;
+color:rgb(255, 94, 0)  ;
+transition: 0.3s ease-in-out;
+}
+footer p{
+width: 100%;
+height: 100px;
+display: flex; 
+justify-content: center;
+ align-items: center;
+ font-size: 17px;
+}
+
+footer{
+background-color: #201e1e; 
+height: 100px; 
+display: flex; 
+justify-content: center;
+ align-items: center;
+}
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+html {
+width: 100%;
+height: 100vh;
+}
+
+
+
+.navbar{
+background: transparent;
+transition: all ease 500ms;
+z-index: 99;
+}
+
+.cardcontent{
+z-index: 20;
+}
+
+/* nav ul {
+display: flex;
+align-items: center;
+justify-content: center;
+list-style: none;
+}
+
+nav ul li {
+padding: 2rem;
+margin: 1rem;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+h1 {
+font-size: 3.6rem;
+text-align: center;
+}
+
+main {
+width: 80vw;
+margin: 2rem auto;
+}
+
+main div {
+margin: 2rem;
+} */
+
+.scrolled {
+background-color: #201e1e;
+color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SIGN UP PAGEEEE */
+
+@media only screen and (max-width: 1000px) {
+
+  .content3{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cardcontent{
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .content3{
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  .cardcontent{
+    width: 450px;
+    margin-left: 28px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+
+  #content2{
+    height: 100%;
+  }
+  .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
